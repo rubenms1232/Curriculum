@@ -22,7 +22,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: #1d3557; }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -30,15 +30,14 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   height: 800px;
-   min-height: 500px;
+   height: 500px;
+   min-height: 300px;
    width: 100%;
-   background: #161415 url(../images/sky.png) no-repeat top center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
+   background: #1d3557; /* Change this color to your desired background color */
    text-align: center;
    overflow: hidden;
 }
+
 
 /* vertically center banner section */
 header:before {
