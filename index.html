@@ -1,319 +1,435 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rúben Silva</title>
-    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/live-resume.css">
-</head>
+    <title>Rúben Silva CV</title>
 
-<body>
-    <header>
-        <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/share.svg" alt="share" class="btn-img">
-            SHARE</button>
-        <nav class="collapsible-nav" id="collapsible-nav">
-            <a href="index.html" class="nav-link active">HOME</a>
-            <a href="resume.html" class="nav-link">RESUME</a>
-             <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
-          <!---  <a href="blog.html" class="nav-link">BLOG</a>-->
-            <a href="contact.html" class="nav-link">CONTACT</a>
-        </nav>
-        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
-            data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
-    </header>
-    <div class="content-wrapper">
-        <aside>
-            <div class="profile-img-wrapper">
-                <img src="assets/images/man.png" alt="profile">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    
+
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Rúben Silva</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#software" class="nav-link"><span data-hover="Software">Software</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        
+                      </div>
+                    </div>
+                </ul>
             </div>
-            <h1 class="profile-name">Rúben Silva</h1>
-            <div class="text-center">
-                <span class="badge badge-white badge-pill profile-designation">Business Management</span>
-            </div>
-            <nav class="social-links">
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
                 
-                <a href="https://www.linkedin.com/in/rubenms1232/" class="social-link"><i class="fab fa-linkedin"></i></a>
-            </nav>
-            <div class="widget">
-                <h5 class="widget-title">personal information</h5>
-                <div class="widget-content">
-                    
-                                     
-                    <p>E-Mail: Rubenandresilva@protonmail.com</p>
-                    <p>Location : Porto, Portugal</p>
-                                        <a href="assets/images/RúbenSilvaCV-Eng.pdf" class="btn btn-download-cv btn-primary rounded-pill" download>
-                            <img src="assets/images/download.svg" alt="download" class="btn-img">DOWNLOAD CV
-                        </a>
-                        
-                </div>
-            </div>
-            <div class="widget card">
-                <div class="card-body">
-                    <div class="widget-content">
-                        <h5 class="widget-title card-title">LANGUAGES</h5>
-                        <p>Portuguese : Native</p>
-                        <a href="https://cert.efset.org/arYuU2" target="_blank" rel="noopener noreferrer">English: C2</a>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="widget card">
-                <div class="card-body">
-                    <div class="widget-content">
-                        <h5 class="widget-title card-title">INTERESTS</h5>
-                        <p>Data analysis</p>
-                        <p>Finance</p>
-                        <p>Marketing analytics</p>
-                        <p>Computer science</p>
-                        <p>Stock market analysis</p>
-                        <p>Cryptocurrency </p>
-                        <p>Artificial intelligence</p>
-                    </div>
-                </div>
-            </div>
-            <div class="widget card">
-                <div class="card-body">
-                    <div class="widget-content">
-                        <h5 class="widget-title card-title"> Feed &#128517;</h5>
-                        <h7 class="widget-title card-title">Last Update: 10/05/2024</h7>
-                        <p> Learning Python</p>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <main>
-            <section class="intro-section">
-                <h2 class="section-title">Hello, Rúben Silva!</h2>
-                <p>As a business management graduate with a strong aptitude for creative problem-solving, 
-                    I have consistently demonstrated my analytical and critical thinking abilities. 
-                    In addition to my excellent communication and teamwork skills, I am a proactive and resourceful individual who is dedicated to finding ways to streamline processes and drive success.
-                     With my combination of technical expertise and interpersonal skills, I am confident in my ability to make a valuable contribution to any organization..</p>
-               <!-- <a href="#!" class="btn btn-primary btn-hire-me">HIRE ME</a>-->
-               
-            </section>
-            <section class="resume-section">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h6 class="section-subtitle">RESUME</h6>
-                        <h2 class="section-title">EDUCATION</h2>
-                        <ul class="time-line">
-                            <span class="badge badge-primary">2024</span>
-                                <h6 class="time-line-item-title">Inbound Marketing</h6>
-                                <p class="time-line-item-subtitle">Hubspot</p>
-                                <!--<p class="time-line-item-content">The Master's in Accounting and Finance is a comprehensive program that covers essential concepts and practices in the fields of accounting and corporate finance. This master's program offers an interactive curriculum with practical classes and exercises that empower students to acquire skills to use relevant tools and strategies for success in accounting and financial areas.</p>
-                           --> </li>
-                           <li class="time-line-item">
-                            <span class="badge badge-primary">2024</span>
-                            <h6 class="time-line-item-title">Storytelling For Digital Marketing</h6>
-                            <p class="time-line-item-subtitle">The University of Chicago | Santander Open Academy  </p>
-                            <!--<p class="time-line-item-content">The Master's in Accounting and Finance is a comprehensive program that covers essential concepts and practices in the fields of accounting and corporate finance. This master's program offers an interactive curriculum with practical classes and exercises that empower students to acquire skills to use relevant tools and strategies for success in accounting and financial areas.</p>
-                       --> </li>
-                        <li class="time-line-item">
-                            <span class="badge badge-primary">2024</span>
-                            <h6 class="time-line-item-title">E-Commerce e Gestão Comercial </h6>
-                            <p class="time-line-item-subtitle">IE University | Santander Open Academy</p>
-                            <!--<p class="time-line-item-content">The Master's in Accounting and Finance is a comprehensive program that covers essential concepts and practices in the fields of accounting and corporate finance. This master's program offers an interactive curriculum with practical classes and exercises that empower students to acquire skills to use relevant tools and strategies for success in accounting and financial areas.</p>
-                       --> </li>
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2023 - To this date</span>
-                                <h6 class="time-line-item-title">Master's in Accounting and Finance</h6>
-                                <p class="time-line-item-subtitle">Instituto Superior de Contabilidade e Administração do Porto</p>
-                                <p class="time-line-item-content">The Master's in Accounting and Finance is a comprehensive program that covers essential concepts and practices in the fields of accounting and corporate finance. This master's program offers an interactive curriculum with practical classes and exercises that empower students to acquire skills to use relevant tools and strategies for success in accounting and financial areas.</p>
-                            </li>
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2022</span>
-                                <h6 class="time-line-item-title">The fundamentals of Digital Marketing</h6>
-                                <p class="time-line-item-subtitle">Google Digital Garage</p>
-                                <p class="time-line-item-content">Fundamentals of Digital Marketing course, a comprehensive program covering key concepts and tools in digital marketing. The course includes interactive lessons and hands-on exercises that teach me how to use Google tools and platforms to reach and engage customers online. I learned about topics such as search engine optimization (SEO), pay-per-click (PPC) advertising, and social media marketing. By the end of the course, I had a solid foundation in digital marketing and was able to apply these skills to my own marketing efforts. This course, which is accredited by the Interactive Advertising Bureau, was a great resource for me as a business owner or marketing professional looking to gain a competitive edge in the digital world.</p>
-                            </li>
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2019 - 2023</span>
-                                <h6 class="time-line-item-title">Bachelor's Business management</h6>
-                                <p class="time-line-item-subtitle">Universidade da Maia</p>
-                                <p class="time-line-item-content">During my time in the program, I have studied a wide range of business-related topics, including finance, marketing, economics, and organizational behavior. I have also had the opportunity to participate in internships and case studies, which have allowed me to gain practical experience in the business world. In addition to the technical skills I have developed, I have also honed my ability to think critically, communicate effectively, and work well in teams. I am confident that these skills will be valuable assets as I begin my career.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <h6 class="section-subtitle">RESUME</h6>
-                        <h2 class="section-title">Experience</h2>
-                        <ul class="time-line">
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2023</span>
-                                <h6 class="time-line-item-title">Marketing Management Internship</h6>
-                                <p class="time-line-item-subtitle">Intern</p>
-                                <p class="time-line-item-content">During my internship, I performed tasks such as content creation, website maintenance, and social media management. I acquired skills in creating engaging content, website updates, and social media strategies, applying theoretical knowledge in a practical context. I familiarized myself with relevant industry tools and enhanced teamwork and communication skills. The internship represented a valuable opportunity to apply my academic knowledge and develop new skills in the field of digital marketing.</p>
-                            </li>
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2022</span>
-                                <h6 class="time-line-item-title">Market Research for Porto Municipal Council</h6>
-                                <p class="time-line-item-subtitle">Research Assistant</p>
-                                <p class="time-line-item-content">As part of a project for the Porto Business School, commissioned by the Porto Municipal Council to explore the history and current challenges faced by local businesses, I had a direct role in administering questionnaires (collecting insights and identifying problems that arose as a result of the pandemic). The project aimed to provide the Porto Municipal Council with relevant and valuable information to help, support, and strengthen the local business community.</p>
-                            </li>
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2022</span>
-                                <h6 class="time-line-item-title">Banco Credibom / Networkme</h6>
-                                <p class="time-line-item-subtitle">Desafio- Analise de Transformação Digital</p>
-                            </li>
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2022</span>
-                                <h6 class="time-line-item-title">Agap2IT/ Networkme</h6>
-                                <p class="time-line-item-subtitle">Desafio- Project Manager</p>
-                            </li>
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2021</span>
-                                <h6 class="time-line-item-title">ChallANJE</h6>
-                                <p class="time-line-item-subtitle">Participant</p>
-                                <p class="time-line-item-content">I participated in ChallANJE, a multidisciplinary junior entrepreneurship project aimed at enhancing the skills of higher education students through interaction with prominent professionals and leading companies. By participating in ChallANJE, I had the opportunity to gain valuable insights and connections in the field, as it offers a unique learning experience that combines practical knowledge with real-world exposure.</p>
-                            </li>
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2017/2018</span>
-                                <h6 class="time-line-item-title">Young Business Talents</h6>
-                                <p class="time-line-item-subtitle">Participant</p>
-                                <p class="time-line-item-content">I successfully participated in Young Business Talents (YBT), an event for pre-university students, which offers a comprehensive simulation of the business world. Through YBT, I and other participants had the opportunity to start and manage a company, compete with others, make strategic decisions, and adapt approaches according to defined objectives and business needs.</p>
-                            </li>
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2016</span>
-                                <h6 class="time-line-item-title">World Philosophy Day Mobile App</h6>
-                                <p class="time-line-item-subtitle">App Developer</p>
-                                <p class="time-line-item-content">In celebration of World Philosophy Day in 2016, I programmed and developed a mobile application aimed at inspiring younger generations to explore everything related to philosophy. It is an educational computer application (word puzzle game) with philosophical terms and concepts, designed to make philosophy more accessible and engaging, especially to a new audience.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="services-section">
-                <h6 class="section-subtitle">Software </h6>
-                <h2 class="section-title">Experience</h2>
-                    <p>I possess a diverse set of skills and a strong interest in technology, marketing, design, financial markets, analysis, and programming. I am versatile and passionate about exploring the intersections of these areas, applying my creativity and technical knowledge to tackle various challenges. I am always seeking opportunities to enhance my abilities and contribute effectively to projects involving these domains
-                    </p>
-        
-                        <div class="bars">
-        
-                       <div class="bars">
-        
-                          <ul class="skills">
-                              <li><span class="bar-expand office"></span><em>Microsoft Office (Excel / PowerPoint / Word)</em></li>
-                              <li><span class="bar-expand photoshop"></span><em>Adobe Photoshop</em></li>
-                              <li><span class="bar-expand premiere"></span><em>Adobe Premiere Pro</em></li>
-                              <li><span class="bar-expand premiere"></span><em>Canva</em></li>
-                              <li><span class="bar-expand spss"></span><em>IBM SPSS</em></li>
-                              <li><span class="bar-expand powerbi"></span><em>PowerBI</em></li>
-                            <li><span class="bar-expand premiere"></span><em>Shopify</em></li>
-                            <li><span class="bar-expand premiere"></span><em>Wordpress</em></li>
-                          </ul>
-                       
-                       </div><!-- end skill-bars -->
-                <section class="services-section">
-                        <h6 class="section-subtitle">Paid Ads </h6>
-                        <h2 class="section-title">Experience</h2>
-                    
-                        <div class="bars">
-                            <ul class="skills">
-                                <li><span class="bar-expand office"></span><em>Pinterest</em></li>
-                                <li><span class="bar-expand powerbi"></span><em>Meta Ads</em></li>
-                                <li><span class="bar-expand spss"></span><em>Tiktok Ads</em></li>
-                            </ul>
-                        </div>
-                    </section>
-                    
-                
-                       
-                       </div><!-- end skill-bars -->
-           <!-- <section class="services-section">
-                <h6 class="section-subtitle">WHAT I DO</h6>
-                <h2 class="section-title">SERVICES</h2>
-                <div class="row">
-                    <div class="media service-card col-lg-6">
-                        <div class="service-icon">
-                            <img src="assets/images/001-target.svg" alt="target">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="service-title"> Digital Marketing Strategy </h5>
-                            <p class="service-description">Craft and implement tailored digital marketing strategies to enhance brand visibility, drive targeted traffic, and boost conversions across diverse online channels.</p>
-                        </div>
-                    </div>
-                    <div class="media service-card col-lg-6">
-                        <div class="service-icon">
-                            <img src="assets/images/003-idea.svg" alt="bulb">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="service-title">Financial Planning</h5>
-                            <p class="service-description">Provide comprehensive financial planning services, including budgeting, investment management, risk assessment, and retirement planning, to help clients achieve their financial goals.</p>
-                        </div>
-                    </div>
-                    <div class="media service-card col-lg-6">
-                        <div class="service-icon">
-                            <img src="assets/images/002-development.svg" alt="development">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="service-title">E-commerce Solutions</h5>
-                            <p class="service-description">Develop and optimize e-commerce platforms with cutting-edge technology and user-centric design to create seamless online shopping experiences and drive sales growth.</p>
-                        </div>
-                    </div>
-                    <div class="media service-card col-lg-6">
-                        <div class="service-icon">
-                            <img src="assets/images/004-smartphone.svg" alt="smartphone">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="service-title">Marketing Analytics</h5>
-                            <p class="service-description">Utilize advanced analytics tools and techniques to analyze marketing performance, identify trends, and make data-driven decisions to optimize marketing campaigns and achieve measurable results.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>-->
-            
-            
-           <!--- <section class="testimonial-section">
-                <div id="testimonialCarousel" class="testimonial-carousel carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
-                                interdum sed tortor.</p>
-                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
-                            <p class="testimonial-name">Nout Golstein</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
-                                interdum sed tortor.</p>
-                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
-                            <p class="testimonial-name">Nout Golstein</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
-                                interdum sed tortor.</p>
-                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
-                            <p class="testimonial-name">Nout Golstein</p>
-                        </div>
-                    </div>
-                    <ol class="carousel-indicators">
-                        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
-                        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
-                    </ol>
-                </div>
-            </section>--->
-            
-           <!-- <a href="assets/images/Rúben Silva CV ENG.pdf" class="btn btn-download-cv btn-primary rounded-pill" download>
-                <img src="assets/images/download.svg" alt="download" class="btn-img">DOWNLOAD CV English
-            </a>
-            <a href="assets/images/RúbenSilvaCV.pdf" class="btn btn-download-cvpt btn-primary rounded-pill" download>
-                <img src="assets/images/download.svg" alt="download" class="btn-img">DOWNLOAD CV Portuguese
-            </a>-->
+                <div class="col-lg-8 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my personal website!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, </span>
+                                <div class="animated-info">
+                                    <span class="animated-item">I'm Rúben </span>
+                                    <span class="animated-item">Finance</span>
+                                    <span class="animated-item">Marketing </span>
+                                
+                                    
+                                    
+                                </div>
+                        </h1>
 
-            <footer>Contact <a href="https://www.linkedin.com/in/rubenms1232/" target="_blank" rel="noopener noreferrer">Linkedin</a>. </footer>
-            <footer>Disclaimer: Some information about Rúben Silva may not be up to date</footer>
+                        <p>Business management graduate with expertise in data analysis, e-commerce, marketing, and advertising. Skilled in using data insights to drive growth and optimize strategies. Proactive, collaborative, and dedicated to delivering results.</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="https://rubenms1232.github.io/Curriculum/assets/images/R%C3%BAbenSilvaCV-Eng.pdf" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <!-- <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="images/undraw/man.png" class="img-fluid" alt="png image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+     <!-- PROJECTS -->
+     <section class="project py-5" id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11 text-center mx-auto col-12">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>Python Projects</h2>
+                    </div>
+      
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>Image Quotes</h3>
+                                <p>Created visually appealing images by overlaying meaningful quotes.</p>
+                                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Quotes">View Project</a>
+                            </div>
+                        </div>
+      
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>Speed Up Project</h3>
+                                <p>Developed a project to efficiently speed up songs for various uses.</p>
+                            </div>
+                        </div>
+      
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>Media Management Project</h3>
+                                <p>Automated renaming mp4 files and updating an Excel sheet, streamlining media management processes.</p>
+                                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Rename%20mp4%20files%20and%20update%20Excel">View Project</a>
+                            </div>
+                        </div>
+      
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>File Management Project</h3>
+                                <p>Listed every file in a folder and exported the list to a CSV file for easy reference.</p>
+                                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/List%20files%20in%20folder%20and%20export%20to%20CSV">View Project</a>
+                            </div>
+                        </div>
+      
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>Bulk Image Processing</h3>
+                                <p>Automated the process of adding logos to images, saving time and ensuring consistent branding.</p>
+                                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Add%20logo%20to%20images%20in%20bulk">View Project</a>
+                            </div>
+                        </div>
+      
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>Metadata Cleaning Project</h3>
+                                <p>Removed unnecessary metadata to enhance privacy and reduce file sizes.</p>
+                                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Clean%20metadata%20from%20files">View Project</a>
+                            </div>
+                        </div>
+      
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>Media Conversion</h3>
+                                <p>Converted MP3 files to video format and listed results in an Excel file.</p>
+                                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Convert%20mp3%20to%20video%2C%20list%20results">View Project</a>
+                            </div>
+                        </div>
+      
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>Video Resizing Project</h3>
+                                <p>Resized video files for optimization across platforms and purposes.</p>
+                                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Resize%20video%20files">View Project</a>
+                            </div>
+                        </div>
+      
+                        <div class="item">
+                            <div class="project-info">
+                                <h3>Video Reordering Project</h3>
+                                <p>Reordered video files based on numbers to ensure logical sequencing.</p>
+                                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Reorder%20video%20files%20by%20number">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+      <div class="container">
+          <div class="row">
+  
+              <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiences</h2>
+  
+                  <div class="timeline">
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2023</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Marketing Management Internship</span><small>Intern</small></h3>
+                              <p>Handled content creation, website updates, and social media strategies while gaining practical skills and industry tools experience.</p>
+                          </div>
+                      </div>
+  
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2022</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Market Research for Porto Municipal Council</span><small>Research Assistant</small></h3>
+                              <p>Collected data and identified business challenges during a study for the Porto Municipal Council.</p>
+                          </div>
+                      </div>
+  
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2022</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Banco Credibom / Networkme</span><small>Desafio- Analise de Transformação Digital</small></h3>
+                              <p>Contributed to digital transformation analysis challenges.</p>
+                          </div>
+                      </div>
+  
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2021</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>ChallANJE</span><small>Participant</small></h3>
+                              <p>Engaged in a junior entrepreneurship project to gain practical insights and connect with professionals.</p>
+                          </div>
+                      </div>
+  
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2017/2018</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Young Business Talents</span><small>Participant</small></h3>
+                              <p>Participated in a business simulation competition, managing a virtual company and making strategic decisions.</p>
+                          </div>
+                      </div>
+  
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2016</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>World Philosophy Day Mobile App</span><small>App Developer</small></h3>
+                              <p>Developed an educational app to make philosophy engaging and accessible to young audiences.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Education</h2>
+  
+                  <div class="timeline">
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2024</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Inbound Marketing</span><small>HubSpot</small></h3>
+                              <p>Certified in content marketing and customer engagement strategies.</p>
+                          </div>
+                      </div>
+  
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2024</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Storytelling for Digital Marketing</span><small>The University of Chicago | Santander Open Academy</small></h3>
+                              <p>Learned digital storytelling for impactful marketing campaigns.</p>
+                          </div>
+                      </div>
+  
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2023/YTD</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Master's in Accounting and Finance</span><small>Instituto Superior de Contabilidade e Administração do Porto</small></h3>
+                              <p>Focused on corporate finance concepts and practical applications.</p>
+                          </div>
+                      </div>
+  
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2019/2023</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Bachelor's in Business Management</span><small>Universidade da Maia</small></h3>
+                              <p>Studied finance, marketing, and organizational behavior, with practical internships.</p>
+                          </div>
+                      </div>
+  
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2022</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>The Fundamentals of Digital Marketing</span><small>Google Digital Garage</small></h3>
+                              <p>Completed a certified digital marketing fundamentals course.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+    <!-- PROJECTS -->
+    <!--<section class="project py-5" id="project">
+      <div class="container">
+              
+              <div class="row">
+                <div class="col-lg-11 text-center mx-auto col-12">
+
+                    <div class="col-lg-8 mx-auto">
+                      <h2>Things I've made</h2>
+                    </div>
+
+                    <div class="owl-carousel owl-theme">
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="images/project/project-image02.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+      </div>-->
+
+ 
+<section class="skills py-5" id="software">
+    <div class="container">
+        <!-- Software Experience -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h6 class="section-subtitle">Software</h6>
+                <h2 class="section-title mb-4">Experience</h2>
+                <p class="mb-5">I possess a diverse set of skills and a strong interest in technology, marketing, design, financial markets, analysis, and programming. I am versatile and passionate about exploring the intersections of these areas, applying my creativity and technical knowledge to tackle various challenges. I am always seeking opportunities to enhance my abilities and contribute effectively to projects involving these domains.</p>
+                
+                <div class="skills-wrapper">
+                    <ul class="skills-list">
+                        <li><span class="bar-expand office"></span><em>Microsoft Office (Excel / PowerPoint / Word)</em></li>
+                        <li><span class="bar-expand photoshop"></span><em>Adobe Photoshop</em></li>
+                        <li><span class="bar-expand premiere"></span><em>Adobe Premiere Pro</em></li>
+                        <li><span class="bar-expand canva"></span><em>Canva</em></li>
+                        <li><span class="bar-expand spss"></span><em>IBM SPSS</em></li>
+                        <li><span class="bar-expand powerbi"></span><em>PowerBI</em></li>
+                        <li><span class="bar-expand shopify"></span><em>Shopify</em></li>
+                        <li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paid Ads Experience -->
+        <div class="row">
+            <div class="col-12">
+                <h6 class="section-subtitle">Paid Ads</h6>
+                <h2 class="section-title mb-4">Experience</h2>
+                
+                <div class="skills-wrapper">
+                    <ul class="skills-list">
+                        <li><span class="bar-expand pinterest"></span><em>Pinterest</em></li>
+                        <li><span class="bar-expand meta"></span><em>Meta Ads</em></li>
+                        <li><span class="bar-expand tiktok"></span><em>Tiktok Ads</em></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
-    <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
-    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/live-resume.js"></script>
-</body>
+</section>
 
+    
+
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Contact <a href="https://www.linkedin.com/in/rubenms1232/" target="_blank" rel="noopener noreferrer">Linkedin</a>. </p>
+                        <p class="copyright-text text-center">Disclaimer: Some information about Rúben Silva may not be up to date</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
 </html>

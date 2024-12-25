@@ -2582,10 +2582,6 @@ input[type="button"].btn-block {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child),
-.btn-group > .btn-group:not(:first-child) {
-  margin-left: -1px; }
-
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn {
   border-top-right-radius: 0;
@@ -8211,28 +8207,18 @@ main {
 
 .photoshop {
   width: 65%;
-  -moz-animation: photoshop 2s ease;
-  -webkit-animation: photoshop 2s ease;
 }
 .office {
   width: 85%;
-  -moz-animation: office 2s ease;
-  -webkit-animation: office 2s ease;
 }
 .premiere {
   width: 60%;
-  -moz-animation: premiere 2s ease;
-  -webkit-animation: premiere 2s ease;
 }
 .spss {
   width: 70%;
-  -moz-animation: spss 2s ease;
-  -webkit-animation: spss 2s ease;
 }
 .powerbi {
   width: 55%;
-  -moz-animation: powerbi 2s ease;
-  -webkit-animation: powerbi 2s ease;
 }
 .jquery {
   width: 50%;
