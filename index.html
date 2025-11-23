@@ -22,14 +22,14 @@
           </div>
         </div>
         <nav class="nav-links" aria-label="Primary">
-          <a href="#about">About</a>
+         
           <a href="#studies">Studies</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
+          
         </nav>
        
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/rubenms1232/" target="_blank" rel="noopener">Let's Connect</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/rubenamsilva/" target="_blank" rel="noopener">Let's Connect</a>
       </header>
 
       <main>
@@ -37,25 +37,23 @@
           <div class="hero-text">
             <p class="eyebrow">Data &bull; Automation &bull; Marketing</p>
             <h1>Hi, I'm R&#250;ben.<br>A creative strategist focused on data-driven growth.</h1>
-            <p class="lead">Business grad focused on data, e-commerce, and advertising.<br>Turning insights into leaner launches and faster tweaks.</p>
+            <p class="lead">Business grad focused on data, e-commerce, and advertising.</p>
             <div class="tag-row">
               <span class="tag">Data Analysis</span>
               <span class="tag">Marketing Ops</span>
               <span class="tag">Financial Strategy</span>
             </div>
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="https://rubenms1232.github.io/Curriculum/assets/images/R%C3%BAbenSilvaCV-Eng.pdf" target="_blank" rel="noopener">Download CV</a>
-              
-            </div>
+            
           </div>
           <div class="hero-visual">
             <div class="portrait-frame">
               <img src="images/undraw/man.png" alt="Portrait of R&#250;ben Silva" class="portrait-img">
             </div>
            
-            <div class="stat-badge">
-              <span class="muted">Python automations</span>
-              <strong>9</strong>
+            <div class="stat-badge" aria-live="polite">
+              <span class="muted" data-stat-label>Where I'm growing</span>
+              <strong data-stat-primary>Sword Health</strong>
+              <span class="muted stat-meta" data-stat-secondary>Accounts Payable</span>
             </div>
           </div>
         </section>
@@ -64,8 +62,7 @@
           <div class="discipline-inner">
             <span>Automation</span>
             <span>Data Analysis</span>
-            <span>Marketing Ops</span>
-            
+            <span>Marketing Ops</span>            
             <span>Design Systems</span>
           </div>
         </div>
@@ -83,7 +80,7 @@
           <div class="meta-row">
             <div class="meta-card">
               <span class="meta-label">Focus</span>
-              <strong>Business & Marketing Strategy</strong>
+              <strong>Data and Automation</strong>
             </div>
             <div class="meta-card">
               <span class="meta-label">Currently Studying</span>
@@ -410,7 +407,11 @@
           <p class="muted">Tell me your goal; I'll automate.</p>
         </div>
         <div class="cta-actions">
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/rubenms1232/" target="_blank" rel="noopener">Linkedin</a>
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/rubenamsilva/" target="_blank" rel="noopener">Linkedin</a>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://rubenms1232.github.io/Curriculum/assets/images/R%C3%BAbenSilvaCV-Eng.pdf" target="_blank" rel="noopener">Download CV</a>
+            
+          </div>
           <a class="btn btn-outline" href="mailto:ruben.andre.silva7@gmail.com">Email me</a>
         </div>
       </section>
@@ -419,5 +420,41 @@
         <p class="muted">© 2025 R&#250;ben Silva. Some information may not be up to date.</p>
       </footer>
     </div>
+    <script>
+      (function() {
+        const entries = [
+          { label: "Currently at", primary: "Sword Health", secondary: "Accounts Payable" },
+          { label: "Studying at", primary: "ISCAP", secondary: "Master's in Accounting & Finance" },
+          { label: "Graduated at", primary: "Universidade da Maia", secondary: "Bachelor's in Business Management" },
+          { label: "Certified at", primary: "The University of Chicago", secondary: "Storytelling for Digital Marketing" },
+          { label: "Certified at", primary: "HubSpot", secondary: "Inbound Marketing" },
+          { label: "Certified at", primary: "Google Digital Garage", secondary: "Digital Marketing Fundamentals" }
+        ];
+        const badge = document.querySelector('.stat-badge');
+        if (!badge) return;
+        const labelEl = badge.querySelector('[data-stat-label]');
+        const primaryEl = badge.querySelector('[data-stat-primary]');
+        const secondaryEl = badge.querySelector('[data-stat-secondary]');
+        let index = 0;
+
+        const render = () => {
+          const item = entries[index];
+          labelEl.textContent = item.label;
+          primaryEl.textContent = item.primary;
+          secondaryEl.textContent = item.secondary;
+        };
+
+        render();
+
+        setInterval(() => {
+          badge.classList.add('is-swapping');
+          setTimeout(() => {
+            index = (index + 1) % entries.length;
+            render();
+            badge.classList.remove('is-swapping');
+          }, 180);
+        }, 3200);
+      })();
+    </script>
   </body>
 </html>
