@@ -1,460 +1,535 @@
-﻿<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio and curriculum of R&#250;ben Silva - data analysis, automation, marketing, and design.">
-    <title>R&#250;ben Silva - Digital Strategy & Design</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/tooplate-style.css">
-  </head>
-  <body>
-    <div class="page">
-      <header class="site-header">
-        <div class="brand">
-          <div class="brand-mark">RS</div>
-          
-          <div>
-            <p class="brand-name">R&#250;ben Silva</p>
-            
-          </div>
-        </div>
-        <nav class="nav-links" aria-label="Primary">
-         
-          <a href="#studies">Studies</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          
-        </nav>
-       
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/rubenamsilva/" target="_blank" rel="noopener">Let's Connect</a>
-      </header>
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
-      <main>
-        <section class="hero" id="about">
-          <div class="hero-text">
-            <p class="eyebrow">Data &bull; Automation &bull; Marketing</p>
-            <h1>Hi, I'm R&#250;ben.<br>A creative strategist focused on data-driven growth.</h1>
-            <p class="lead">Business grad focused on data, e-commerce, and advertising.</p>
-            <div class="tag-row">
-              <span class="tag">Data Analysis</span>
-              <span class="tag">Marketing Ops</span>
-              <span class="tag">Financial Strategy</span>
-            </div>
-            
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Rúben Silva - Financial Strategist & Automation Developer.">
+  <title>Rúben Silva | Financial Strategist</title>
+
+  <!-- Fonts: Inter (Sans) & Merriweather (Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Merriweather', 'serif'],
+          },
+          colors: {
+            cream: {
+              50: '#FBF7F4', // Warm background
+              100: '#F5EFEA',
+            },
+            stone: {
+              850: '#292524', // Deep warm gray
+            },
+            clay: {
+              500: '#DA7756', // Terracotta Accent
+              600: '#C05F3E',
+            }
+          },
+          boxShadow: {
+            'soft': '0 4px 20px -2px rgba(218, 119, 86, 0.1), 0 2px 6px -2px rgba(0, 0, 0, 0.05)', // Warm shadow
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #FBF7F4;
+      color: #292524;
+    }
+
+    .logo-container {
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border: 1px solid #E7E5E4;
+      /* Stone 200 */
+    }
+
+    .logo-mark {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .paper-card {
+      background-color: white;
+      border: 1px solid #E7E5E4;
+      border-radius: 1rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+      transition: all 0.3s ease;
+    }
+
+    .paper-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+      border-color: #D6D3D1;
+    }
+
+    /* Custom scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="antialiased selection:bg-clay-500 selection:text-white">
+
+  <div class="max-w-5xl mx-auto px-6 py-16 md:py-24">
+
+    <!-- Header / Hero Section -->
+    <header class="mb-24 reveal active">
+      <span
+        class="inline-block py-1 px-3 rounded-full bg-clay-500/10 text-clay-600 text-sm font-bold tracking-wide mb-6">
+        HELLO, I'M RÚBEN
+      </span>
+      <h1 class="text-5xl md:text-7xl font-serif font-black tracking-tight mb-6 text-stone-900 leading-tight">
+        Financial Strategist <br>
+        <span class="text-stone-400 italic font-light">&</span> Automation Developer.
+      </h1>
+      <p class="text-xl text-stone-600 mb-10 max-w-2xl leading-relaxed font-serif">
+        I bridge the gap between financial data and operational efficiency. Currently building automation at <span
+          class="font-bold text-stone-900 border-b-2 border-clay-500/30">Sword Health</span>.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="https://rubenms1232.github.io/Curriculum/assets/images/R%C3%BAbenSilvaCV-Eng.pdf" target="_blank"
+          rel="noopener"
+          class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-stone-900 text-white rounded-full font-sans font-semibold hover:bg-clay-600 transition-colors shadow-lg hover:shadow-xl hover:shadow-clay-500/20">
+          <i data-lucide="download" class="w-4 h-4"></i> Download CV
+        </a>
+        <a href="https://www.linkedin.com/in/rubenamsilva/" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-stone-700 border border-stone-200 rounded-full font-sans font-semibold hover:border-stone-400 hover:bg-stone-50 transition-colors">
+          <i data-lucide="linkedin" class="w-4 h-4 text-clay-500"></i> LinkedIn
+        </a>
+      </div>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+      <!-- Left Column: Main Experience -->
+      <main class="lg:col-span-8 space-y-20">
+
+        <!-- Experience Section -->
+        <section id="experience" class="reveal">
+          <div class="flex items-baseline gap-4 mb-8 border-b border-stone-200 pb-4">
+            <h3 class="text-2xl font-serif font-bold text-stone-900">Experience</h3>
+            <p class="text-stone-400 font-serif italic">My professional journey</p>
           </div>
-          <div class="hero-visual">
-            <div class="portrait-frame">
-              <img src="images/undraw/man.png" alt="Portrait of R&#250;ben Silva" class="portrait-img">
+
+          <div class="space-y-8">
+
+            <!-- Sword Health (AP Associate) -->
+            <article class="paper-card p-8">
+              <div class="flex flex-col md:flex-row gap-6">
+                <div class="shrink-0 mx-auto md:mx-0">
+                  <div class="logo-container">
+                    <img src="images/logos/SW.png" alt="Sword Health logo" class="logo-mark">
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                    <h4 class="text-xl font-bold text-stone-900">Accounts Payable Associate</h4>
+                    <span class="text-sm font-bold text-clay-600 bg-clay-500/5 px-3 py-1 rounded-full">2025 -
+                      Present</span>
+                  </div>
+                  <p class="text-stone-500 font-medium mb-3">Sword Health</p>
+                  <p class="text-stone-600 leading-relaxed">
+                    Supporting the accounts payable team by processing invoices, organizing financial records, and
+                    assisting with vendor communications while developing practical skills in accounting procedures and
+                    ERP tools.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Sword Health (Trainee) -->
+            <article class="paper-card p-8">
+              <div class="flex flex-col md:flex-row gap-6">
+                <div class="shrink-0 mx-auto md:mx-0">
+                  <div class="logo-container">
+                    <img src="images/logos/SW.png" alt="Sword Health logo" class="logo-mark">
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                    <h4 class="text-xl font-bold text-stone-900">Accounts Payable Trainee</h4>
+                    <span class="text-sm font-bold text-stone-400 bg-stone-100 px-3 py-1 rounded-full">2024 -
+                      2025</span>
+                  </div>
+                  <p class="text-stone-500 font-medium mb-3">Sword Health</p>
+                  <p class="text-stone-600 leading-relaxed">
+                    Supported payment processes and vendor record management, gaining hands-on experience with
+                    high-volume financial operations in a fast-paced health-tech environment.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Marketing Internship -->
+            <article class="paper-card p-8 bg-stone-50/50 border-dashed">
+              <div class="flex flex-col md:flex-row gap-6">
+                <div class="shrink-0 mx-auto md:mx-0 opacity-80">
+                  <div class="logo-container">
+                    <img src="images/logos/marketing-management.png" alt="Company logo" class="logo-mark">
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                    <h4 class="text-lg font-bold text-stone-800">Marketing Management Internship</h4>
+                    <span class="text-sm font-medium text-stone-400">2023</span>
+                  </div>
+                  <p class="text-stone-500 text-sm mb-3">Marketing Management</p>
+                  <p class="text-stone-600 text-sm leading-relaxed">
+                    Handled content creation, website updates, and social media strategies while gaining practical
+                    skills and industry tools experience.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Porto Municipal Council -->
+            <article class="paper-card p-8 bg-stone-50/50 border-dashed">
+              <div class="flex flex-col md:flex-row gap-6">
+                <div class="shrink-0 mx-auto md:mx-0 opacity-80">
+                  <div class="logo-container">
+                    <img src="images/logos/porto-municipal.png" alt="Porto Municipal Council logo" class="logo-mark">
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                    <h4 class="text-lg font-bold text-stone-800">Market Research</h4>
+                    <span class="text-sm font-medium text-stone-400">2022</span>
+                  </div>
+                  <p class="text-stone-500 text-sm mb-3">Porto Municipal Council</p>
+                  <p class="text-stone-600 text-sm leading-relaxed">
+                    Collected data and identified business challenges during a study for the Porto Municipal Council,
+                    focusing on local economic development.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Simpler list for older roles to save space but keep content -->
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-lg border border-stone-200 flex items-center gap-3">
+              <img src="images/logos/credibom.png" class="w-8 h-8 object-contain" alt="Credibom">
+              <div>
+                <p class="font-bold text-sm text-stone-800">Digital Transformation</p>
+                <p class="text-xs text-stone-500">Banco Credibom (2022)</p>
+              </div>
             </div>
-           
-            <div class="stat-badge" aria-live="polite">
-              <span class="muted" data-stat-label>Where I'm growing</span>
-              <strong data-stat-primary>Sword Health</strong>
-              <span class="muted stat-meta" data-stat-secondary>Accounts Payable</span>
+            <div class="bg-white p-4 rounded-lg border border-stone-200 flex items-center gap-3">
+              <img src="images/logos/anje.png" class="w-8 h-8 object-contain" alt="ANJE">
+              <div>
+                <p class="font-bold text-sm text-stone-800">ChallANJE Participant</p>
+                <p class="text-xs text-stone-500">ANJE (2021)</p>
+              </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg border border-stone-200 flex items-center gap-3">
+              <img src="images/logos/ybt.png" class="w-8 h-8 object-contain" alt="YBT">
+              <div>
+                <p class="font-bold text-sm text-stone-800">Young Business Talents</p>
+                <p class="text-xs text-stone-500">YBT (2017-18)</p>
+              </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg border border-stone-200 flex items-center gap-3">
+              <img src="images/logos/wpd.png" class="w-8 h-8 object-contain" alt="WPD">
+              <div>
+                <p class="font-bold text-sm text-stone-800">App Developer</p>
+                <p class="text-xs text-stone-500">WPD (2016)</p>
+              </div>
             </div>
           </div>
         </section>
 
-        <div class="discipline-bar">
-          <div class="discipline-inner">
-            <span>Automation</span>
-            <span>Data Analysis</span>
-            <span>Marketing Ops</span>            
-            <span>Design Systems</span>
+        <!-- Projects Section -->
+        <section id="projects" class="reveal">
+          <div class="flex items-baseline gap-4 mb-8 border-b border-stone-200 pb-4">
+            <h3 class="text-2xl font-serif font-bold text-stone-900">Projects</h3>
+            <p class="text-stone-400 font-serif italic">Code & Automation</p>
           </div>
-        </div>
 
-        <section class="bio">
-          <div class="bio-top">
-            <div class="bio-intro">
-              
-              <h2>Data-driven strategist specializing in automation and operational efficiency.</h2>
-            </div>
-            <div class="bio-copy">
-              <p>Developing analytical workflows, building automation utilities, and supporting teams with accurate reporting that drives informed decision-making.</p>
-            </div>
-          </div>
-          <div class="meta-row">
-            <div class="meta-card">
-              <span class="meta-label">Focus</span>
-              <strong>Data and Automation</strong>
-            </div>
-            <div class="meta-card">
-              <span class="meta-label">Currently Studying</span>
-              <strong>Master's in Accounting and Finance (ISCAP)</strong>
-            </div>
-            <div class="meta-card">
-              <span class="meta-label">Currently Working</span>
-              <strong>Accounts Payable - Sword Health</strong>
-            </div>
-          </div>
-          
-        </section>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        <section class="studies" id="studies">
-          <div class="section-head">
-            <span class="burst" aria-hidden="true"></span>
-            <div>
-              <h3>Studies & Certifications</h3>
-              <p class="muted">Recognition & learning milestones</p>
-            </div>
-          </div>
-          <div class="studies-list">
-            <article class="study-card">
-              <div class="study-logo">
-                <img src="images/logos/hubspot.png" alt="HubSpot logo" class="logo-mark">
+            <!-- Image Quotes -->
+            <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Quotes"
+              target="_blank" rel="noopener" class="paper-card p-6 block group">
+              <div class="flex justify-between items-start mb-4">
+                <span
+                  class="p-3 bg-stone-100 rounded-lg text-stone-600 group-hover:text-clay-600 group-hover:bg-clay-50 transition-colors">
+                  <i data-lucide="image" class="w-6 h-6"></i>
+                </span>
+                <i data-lucide="arrow-up-right"
+                  class="w-5 h-5 text-stone-300 group-hover:text-clay-500 transition-colors"></i>
               </div>
-              <div>
-                <p class="study-title">Inbound Marketing</p>
-                <p class="study-meta">HubSpot</p>
-                <p class="muted">Certified in content marketing and customer engagement strategies.</p>
-              </div>
-              <div class="study-aside">
-                <span class="study-tag">Marketing</span>
-                <span class="study-year">2024</span>
-              </div>
-            </article>
-            <article class="study-card">
-              <div class="study-logo">
-                <img src="images/logos/university-chicago.png" alt="University of Chicago logo" class="logo-mark">
-              </div>
-              <div>
-                <p class="study-title">Storytelling for Digital Marketing</p>
-                <p class="study-meta">The University of Chicago | Santander Open Academy</p>
-                <p class="muted">Learned digital storytelling for impactful marketing campaigns.</p>
-              </div>
-              <div class="study-aside">
-                <span class="study-tag">Marketing</span>
-                <span class="study-year">2024</span>
-              </div>
-            </article>
-            <article class="study-card">
-              <div class="study-logo">
-                <img src="images/logos/iscap.png" alt="ISCAP logo" class="logo-mark">
-              </div>
-              <div>
-                <p class="study-title">Master's in Accounting and Finance</p>
-                <p class="study-meta">ISCAP</p>
-                <p class="muted">Focused on corporate finance concepts and practical applications.</p>
-              </div>
-              <div class="study-aside">
-                <span class="study-tag">Finance</span>
-                <span class="study-year">2023/YTD</span>
-              </div>
-            </article>
-            <article class="study-card">
-              <div class="study-logo">
-                <img src="images/logos/universidade-maia.png" alt="Universidade da Maia logo" class="logo-mark">
-              </div>
-              <div>
-                <p class="study-title">Bachelor's in Business Management</p>
-                <p class="study-meta">Universidade da Maia</p>
-                <p class="muted">Studied finance, marketing, and organizational behavior with practical internships.</p>
-              </div>
-              <div class="study-aside">
-                <span class="study-tag">Business</span>
-                <span class="study-year">2019/2023</span>
-              </div>
-            </article>
-            <article class="study-card">
-              <div class="study-logo">
-                <img src="images/logos/google-digital-garage.png" alt="Google Digital Garage logo" class="logo-mark">
-              </div>
-              <div>
-                <p class="study-title">The Fundamentals of Digital Marketing</p>
-                <p class="study-meta">Google Digital Garage</p>
-                <p class="muted">Completed a certified digital marketing fundamentals course.</p>
-              </div>
-              <div class="study-aside">
-                <span class="study-tag">Digital Marketing</span>
-                <span class="study-year">2022</span>
-              </div>
-            </article>
-          </div>
-        </section>
+              <h4 class="text-lg font-bold text-stone-900 mb-2 font-serif group-hover:text-clay-600 transition-colors">
+                Image Quotes</h4>
+              <p class="text-stone-500 text-sm leading-relaxed">Created visually appealing images by overlaying
+                meaningful quotes using Python.</p>
+            </a>
 
-        <section class="experience" id="experience">
-          <div class="section-head">
-            <span class="burst" aria-hidden="true"></span>
-            <div>
-              <h3>Experience</h3>
-              <p class="muted">Internships, research, and real-world challenges</p>
+            <!-- Media Management -->
+            <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Rename%20mp4%20files%20and%20update%20Excel"
+              target="_blank" rel="noopener" class="paper-card p-6 block group">
+              <div class="flex justify-between items-start mb-4">
+                <span
+                  class="p-3 bg-stone-100 rounded-lg text-stone-600 group-hover:text-clay-600 group-hover:bg-clay-50 transition-colors">
+                  <i data-lucide="file-video" class="w-6 h-6"></i>
+                </span>
+                <i data-lucide="arrow-up-right"
+                  class="w-5 h-5 text-stone-300 group-hover:text-clay-500 transition-colors"></i>
+              </div>
+              <h4 class="text-lg font-bold text-stone-900 mb-2 font-serif group-hover:text-clay-600 transition-colors">
+                Media Management</h4>
+              <p class="text-stone-500 text-sm leading-relaxed">Automated renaming MP4 files and updating an Excel
+                sheet, streamlining media workflows.</p>
+            </a>
+
+            <!-- File Management -->
+            <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/List%20files%20in%20folder%20and%20export%20to%20CSV"
+              target="_blank" rel="noopener" class="paper-card p-6 block group">
+              <div class="flex justify-between items-start mb-4">
+                <span
+                  class="p-3 bg-stone-100 rounded-lg text-stone-600 group-hover:text-clay-600 group-hover:bg-clay-50 transition-colors">
+                  <i data-lucide="folder-search" class="w-6 h-6"></i>
+                </span>
+                <i data-lucide="arrow-up-right"
+                  class="w-5 h-5 text-stone-300 group-hover:text-clay-500 transition-colors"></i>
+              </div>
+              <h4 class="text-lg font-bold text-stone-900 mb-2 font-serif group-hover:text-clay-600 transition-colors">
+                File Management</h4>
+              <p class="text-stone-500 text-sm leading-relaxed">Script to list every file in a folder and export the
+                inventory to a CSV file.</p>
+            </a>
+
+            <!-- Bulk Image Processing -->
+            <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Add%20logo%20to%20images%20in%20bulk"
+              target="_blank" rel="noopener" class="paper-card p-6 block group">
+              <div class="flex justify-between items-start mb-4">
+                <span
+                  class="p-3 bg-stone-100 rounded-lg text-stone-600 group-hover:text-clay-600 group-hover:bg-clay-50 transition-colors">
+                  <i data-lucide="stamp" class="w-6 h-6"></i>
+                </span>
+                <i data-lucide="arrow-up-right"
+                  class="w-5 h-5 text-stone-300 group-hover:text-clay-500 transition-colors"></i>
+              </div>
+              <h4 class="text-lg font-bold text-stone-900 mb-2 font-serif group-hover:text-clay-600 transition-colors">
+                Bulk Watermarking</h4>
+              <p class="text-stone-500 text-sm leading-relaxed">Automated the process of adding logos to images in bulk
+                to ensure consistent branding.</p>
+            </a>
+
+            <!-- Metadata Cleaning -->
+            <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Clean%20metadata%20from%20files"
+              target="_blank" rel="noopener" class="paper-card p-6 block group">
+              <div class="flex justify-between items-start mb-4">
+                <span
+                  class="p-3 bg-stone-100 rounded-lg text-stone-600 group-hover:text-clay-600 group-hover:bg-clay-50 transition-colors">
+                  <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </span>
+                <i data-lucide="arrow-up-right"
+                  class="w-5 h-5 text-stone-300 group-hover:text-clay-500 transition-colors"></i>
+              </div>
+              <h4 class="text-lg font-bold text-stone-900 mb-2 font-serif group-hover:text-clay-600 transition-colors">
+                Metadata Cleaner</h4>
+              <p class="text-stone-500 text-sm leading-relaxed">Removed unnecessary metadata to enhance privacy and
+                reduce file sizes.</p>
+            </a>
+
+            <!-- More tools compact list -->
+            <div class="md:col-span-2 pt-4">
+              <h5 class="text-sm font-bold text-stone-400 uppercase tracking-widest mb-4">Additional Utilities</h5>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Convert%20mp3%20to%20video%2C%20list%20results"
+                  target="_blank" rel="noopener"
+                  class="flex items-center gap-2 p-3 bg-white border border-stone-200 rounded-lg hover:border-clay-400 transition-colors">
+                  <i data-lucide="file-audio" class="w-4 h-4 text-clay-500"></i>
+                  <span class="text-sm font-medium text-stone-700">Media Conversion</span>
+                </a>
+                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Resize%20video%20files"
+                  target="_blank" rel="noopener"
+                  class="flex items-center gap-2 p-3 bg-white border border-stone-200 rounded-lg hover:border-clay-400 transition-colors">
+                  <i data-lucide="scissors" class="w-4 h-4 text-clay-500"></i>
+                  <span class="text-sm font-medium text-stone-700">Video Resizing</span>
+                </a>
+                <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Reorder%20video%20files%20by%20number"
+                  target="_blank" rel="noopener"
+                  class="flex items-center gap-2 p-3 bg-white border border-stone-200 rounded-lg hover:border-clay-400 transition-colors">
+                  <i data-lucide="list-video" class="w-4 h-4 text-clay-500"></i>
+                  <span class="text-sm font-medium text-stone-700">Video Reordering</span>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="exp-list">
-            <article class="exp-card list">
-              <div class="exp-logo">
-                <img src="images/logos/SW.png" alt="Accounts Payable Trainee" class="logo-mark">
-              </div>
-              <div>
-                <p class="exp-title">Accounts Payable Associate</p>
-                <p class="exp-role">Associate</p>
-                <p class="exp-desc">Supported the accounts payable team by processing invoices, organizing financial records, and assisting with vendor communications while developing practical skills in accounting procedures and ERP tools.</p>
-              </div>
-              <div class="exp-aside">
-                <span class="exp-tag">Experience</span>
-                <span class="exp-year">2025/YTD</span>
-              </div>
-            </article>
-            <article class="exp-card list">
-              <div class="exp-logo">
-                <img src="images/logos/SW.png" alt="Accounts Payable Trainee" class="logo-mark">
-              </div>
-              <div>
-                <p class="exp-title">Accounts Payable Trainee</p>
-                <p class="exp-role">Trainee</p>
-                <p class="exp-desc">Supported the accounts payable team by processing invoices, organizing financial records, and assisting with vendor communications while developing practical skills in accounting procedures and ERP tools.</p>
-              </div>
-              <div class="exp-aside">
-                <span class="exp-tag">Experience</span>
-                <span class="exp-year">2024/2025</span>
-              </div>
-            </article>
-            <article class="exp-card list">
-              <div class="exp-logo">
-                <img src="images/logos/marketing-management.png" alt="Marketing Management Internship logo" class="logo-mark">
-              </div>
-              <div>
-                <p class="exp-title">Marketing Management Internship</p>
-                <p class="exp-role">Intern</p>
-                <p class="exp-desc">Handled content creation, website updates, and social media strategies while gaining practical skills and industry tools experience.</p>
-              </div>
-              <div class="exp-aside">
-                <span class="exp-tag">Experience</span>
-                <span class="exp-year">2023</span>
-              </div>
-            </article>
-            <article class="exp-card list">
-              <div class="exp-logo">
-                <img src="images/logos/porto-municipal.png" alt="Porto Municipal Council logo" class="logo-mark">
-              </div>
-              <div>
-                <p class="exp-title">Market Research for Porto Municipal Council</p>
-                <p class="exp-role">Research Assistant</p>
-                <p class="exp-desc">Collected data and identified business challenges during a study for the Porto Municipal Council.</p>
-              </div>
-              <div class="exp-aside">
-                <span class="exp-tag">Research</span>
-                <span class="exp-year">2022</span>
-              </div>
-            </article>
-            <article class="exp-card list">
-              <div class="exp-logo">
-                <img src="images/logos/credibom.png" alt="Credibom / Networkme logo" class="logo-mark">
-              </div>
-              <div>
-                <p class="exp-title">Banco Credibom / Networkme</p>
-                <p class="exp-role">Desafio - Análise de Transformação Digital</p>
-                <p class="exp-desc">Contributed to digital transformation analysis challenges.</p>
-              </div>
-              <div class="exp-aside">
-                <span class="exp-tag">Strategy</span>
-                <span class="exp-year">2022</span>
-              </div>
-            </article>
-            <article class="exp-card list">
-              <div class="exp-logo">
-                <img src="images/logos/anje.png" alt="ChallANJE logo" class="logo-mark">
-              </div>
-              <div>
-                <p class="exp-title">ChallANJE</p>
-                <p class="exp-role">Participant</p>
-                <p class="exp-desc">Engaged in a junior entrepreneurship project to gain practical insights and connect with professionals.</p>
-              </div>
-              <div class="exp-aside">
-                <span class="exp-tag">Entrepreneurship</span>
-                <span class="exp-year">2021</span>
-              </div>
-            </article>
-            <article class="exp-card list">
-              <div class="exp-logo">
-                <img src="images/logos/ybt.png" alt="Young Business Talents logo" class="logo-mark">
-              </div>
-              <div>
-                <p class="exp-title">Young Business Talents</p>
-                <p class="exp-role">Participant</p>
-                <p class="exp-desc">Participated in a business simulation competition, managing a virtual company and making strategic decisions.</p>
-              </div>
-              <div class="exp-aside">
-                <span class="exp-tag">Competition</span>
-                <span class="exp-year">2017/2018</span>
-              </div>
-            </article>
-            <article class="exp-card list">
-              <div class="exp-logo">
-                <img src="images/logos/wpd.png" alt="World Philosophy Day logo" class="logo-mark">
-              </div>
-              <div>
-                <p class="exp-title">World Philosophy Day Mobile App</p>
-                <p class="exp-role">App Developer</p>
-                <p class="exp-desc">Developed an educational app to make philosophy engaging and accessible to young audiences.</p>
-              </div>
-              <div class="exp-aside">
-                <span class="exp-tag">Product</span>
-                <span class="exp-year">2016</span>
-              </div>
-            </article>
+
           </div>
         </section>
 
-        <section class="projects" id="projects">
-          <div class="section-head">
-            <span class="burst" aria-hidden="true"></span>
-            <div>
-              <h3>Projects</h3>
-              <p class="muted">Hands-on automation & media tools</p>
-            </div>
-          </div>
-          <div class="projects-grid">
-            <article class="project-card">
-              <span class="project-tag">Automation</span>
-              <h4>Image Quotes</h4>
-              <p class="muted">Created visually appealing images by overlaying meaningful quotes.</p>
-              <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Quotes" target="_blank" rel="noopener">View project</a>
-            </article>
-            <article class="project-card">
-              <span class="project-tag">Audio</span>
-              <h4>Speed Up Project</h4>
-              <p class="muted">Developed a project to efficiently speed up songs for various uses.</p>
-              <span class="muted">Link coming soon</span>
-            </article>
-            <article class="project-card">
-              <span class="project-tag">Automation</span>
-              <h4>Media Management Project</h4>
-              <p class="muted">Automated renaming MP4 files and updating an Excel sheet, streamlining media management processes.</p>
-              <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Rename%20mp4%20files%20and%20update%20Excel" target="_blank" rel="noopener">View project</a>
-            </article>
-            <article class="project-card">
-              <span class="project-tag">Automation</span>
-              <h4>File Management Project</h4>
-              <p class="muted">Listed every file in a folder and exported the list to a CSV file for easy reference.</p>
-              <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/List%20files%20in%20folder%20and%20export%20to%20CSV" target="_blank" rel="noopener">View project</a>
-            </article>
-            <article class="project-card">
-              <span class="project-tag">Branding</span>
-              <h4>Bulk Image Processing</h4>
-              <p class="muted">Automated the process of adding logos to images, saving time and ensuring consistent branding.</p>
-              <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Add%20logo%20to%20images%20in%20bulk" target="_blank" rel="noopener">View project</a>
-            </article>
-            <article class="project-card">
-              <span class="project-tag">Privacy</span>
-              <h4>Metadata Cleaning Project</h4>
-              <p class="muted">Removed unnecessary metadata to enhance privacy and reduce file sizes.</p>
-              <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Clean%20metadata%20from%20files" target="_blank" rel="noopener">View project</a>
-            </article>
-            <article class="project-card">
-              <span class="project-tag">Media</span>
-              <h4>Media Conversion</h4>
-              <p class="muted">Converted MP3 files to video format and listed results in an Excel file.</p>
-              <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Convert%20mp3%20to%20video%2C%20list%20results" target="_blank" rel="noopener">View project</a>
-            </article>
-            <article class="project-card">
-              <span class="project-tag">Video</span>
-              <h4>Video Resizing Project</h4>
-              <p class="muted">Resized video files for optimization across platforms and purposes.</p>
-              <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Resize%20video%20files" target="_blank" rel="noopener">View project</a>
-            </article>
-            <article class="project-card">
-              <span class="project-tag">Video</span>
-              <h4>Video Reordering Project</h4>
-              <p class="muted">Reordered video files based on numbers to ensure logical sequencing.</p>
-              <a href="https://github.com/rubenms1232/Curriculum/tree/main/assets/Python%20Projects/Reorder%20video%20files%20by%20number" target="_blank" rel="noopener">View project</a>
-            </article>
-          </div>
-        </section>
-
-        <section class="skills" id="skills">
-          <div class="section-head">
-            <span class="burst" aria-hidden="true"></span>
-            <div>
-              <h3>Tools & Platforms</h3>
-              <p class="muted">Analytical, creative, and commerce stacks</p>
-            </div>
-          </div>
-          <div class="skills-grid">
-            <article class="skill-card">
-              <h4>Software</h4>
-              <ul>
-                <li>Microsoft Office (Excel / PowerPoint / Word)</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Premiere Pro</li>
-                <li>Canva</li>
-                <li>IBM SPSS</li>
-                <li>PowerBI</li>
-                <li>Shopify</li>
-                <li>WordPress</li>
-              </ul>
-            </article>
-            <article class="skill-card">
-              <h4>Paid Ads</h4>
-              <ul>
-                <li>Pinterest</li>
-                <li>Meta Ads</li>
-                <li>Tiktok Ads</li>
-              </ul>
-            </article>
-          </div>
-        </section>
       </main>
 
-      <section class="contact" id="contact">
-        <div>
-          <p class="eyebrow">Let's collaborate</p>
-          
-          <p class="muted">Tell me your goal; I'll automate.</p>
-        </div>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/rubenamsilva/" target="_blank" rel="noopener">Linkedin</a>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="https://rubenms1232.github.io/Curriculum/assets/images/R%C3%BAbenSilvaCV-Eng.pdf" target="_blank" rel="noopener">Download CV</a>
-            
+      <!-- Right Column: Skills & Studies (Sticky) -->
+      <aside class="lg:col-span-4 space-y-12">
+
+        <!-- Studies (Vertical Modern List) -->
+        <section id="studies" class="reveal">
+          <h3 class="text-xl font-serif font-bold text-stone-900 mb-6 flex items-center gap-2">
+            <i data-lucide="graduation-cap" class="w-5 h-5 text-clay-500"></i> Education
+          </h3>
+
+          <div class="space-y-4">
+            <!-- ISCAP -->
+            <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm">
+              <div class="flex items-center gap-3 mb-3">
+                <img src="images/logos/iscap.png" class="w-10 h-10 object-contain p-1 border rounded bg-white"
+                  alt="ISCAP">
+                <div>
+                  <p class="font-bold text-stone-900 text-sm">Master's in Accounting</p>
+                  <p class="text-xs text-stone-500">ISCAP (Present)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Uni Maia -->
+            <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm">
+              <div class="flex items-center gap-3 mb-3">
+                <img src="images/logos/universidade-maia.png"
+                  class="w-10 h-10 object-contain p-1 border rounded bg-white" alt="Uni Maia">
+                <div>
+                  <p class="font-bold text-stone-900 text-sm">Bachelor's Business</p>
+                  <p class="text-xs text-stone-500">Uni Maia (2019-23)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <h4 class="text-xs font-bold text-stone-400 uppercase mb-3">Certifications</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <img src="images/logos/university-chicago.png" class="w-6 h-6 object-contain mt-0.5" alt="UChicago">
+                  <span class="text-sm text-stone-600 leading-tight">Storytelling for Digital Marketing <span
+                      class="text-stone-400 block text-xs mt-0.5">U. Chicago</span></span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img src="images/logos/hubspot.png" class="w-6 h-6 object-contain mt-0.5" alt="HubSpot">
+                  <span class="text-sm text-stone-600 leading-tight">Inbound Marketing <span
+                      class="text-stone-400 block text-xs mt-0.5">HubSpot</span></span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img src="images/logos/google-digital-garage.png" class="w-6 h-6 object-contain mt-0.5" alt="Google">
+                  <span class="text-sm text-stone-600 leading-tight">Digital Marketing Fundamentals <span
+                      class="text-stone-400 block text-xs mt-0.5">Google</span></span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <a class="btn btn-outline" href="mailto:ruben.andre.silva7@gmail.com">Email me</a>
-        </div>
-      </section>
+        </section>
 
-      <footer class="site-footer">
-        <p class="muted">© 2025 R&#250;ben Silva. Some information may not be up to date.</p>
-      </footer>
+        <!-- Skills -->
+        <section id="skills" class="reveal">
+          <h3 class="text-xl font-serif font-bold text-stone-900 mb-6 flex items-center gap-2">
+            <i data-lucide="cpu" class="w-5 h-5 text-clay-500"></i> Skills
+          </h3>
+
+          <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
+            <div class="mb-6">
+              <h4 class="text-xs font-bold text-stone-400 uppercase mb-3">Software</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-md">Excel &
+                  Office</span>
+                <span class="px-2.5 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-md">PowerBI</span>
+                <span
+                  class="px-2.5 py-1 bg-clay-50 text-clay-700 text-xs font-bold rounded-md border border-clay-100">Python</span>
+                <span class="px-2.5 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-md">SPSS</span>
+                <span class="px-2.5 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-md">Adobe Suite</span>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-stone-400 uppercase mb-3">Platforms</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-md">Shopify</span>
+                <span class="px-2.5 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-md">WordPress</span>
+                <span class="px-2.5 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-md">Meta Ads</span>
+                <span class="px-2.5 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-md">TikTok Ads</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="reveal">
+          <div class="bg-stone-900 text-cream-50 p-6 rounded-2xl text-center">
+            <h3 class="font-serif text-xl font-bold mb-2">Let's Connect</h3>
+            <p class="text-stone-400 text-sm mb-6">Open to opportunities in Finance & Automation.</p>
+            <a href="mailto:ruben.andre.silva7@gmail.com"
+              class="block w-full py-3 bg-clay-500 text-white rounded-lg font-bold hover:bg-clay-600 transition-colors">
+              Send Email
+            </a>
+          </div>
+        </section>
+
+      </aside>
     </div>
-    <script>
-      (function() {
-        const entries = [
-          { label: "Currently at", primary: "Sword Health", secondary: "Accounts Payable" },
-          { label: "Studying at", primary: "ISCAP", secondary: "Master's in Accounting & Finance" },
-          { label: "Graduated at", primary: "Universidade da Maia", secondary: "Bachelor's in Business Management" },
-          { label: "Certified at", primary: "The University of Chicago", secondary: "Storytelling for Digital Marketing" },
-          { label: "Certified at", primary: "HubSpot", secondary: "Inbound Marketing" },
-          { label: "Certified at", primary: "Google Digital Garage", secondary: "Digital Marketing Fundamentals" }
-        ];
-        const badge = document.querySelector('.stat-badge');
-        if (!badge) return;
-        const labelEl = badge.querySelector('[data-stat-label]');
-        const primaryEl = badge.querySelector('[data-stat-primary]');
-        const secondaryEl = badge.querySelector('[data-stat-secondary]');
-        let index = 0;
 
-        const render = () => {
-          const item = entries[index];
-          labelEl.textContent = item.label;
-          primaryEl.textContent = item.primary;
-          secondaryEl.textContent = item.secondary;
-        };
+    <footer class="mt-24 pt-8 border-t border-stone-200 text-center text-stone-400 text-sm font-medium">
+      <p>Designed with <span class="text-clay-500">♥</span> by Rúben Silva.</p>
+    </footer>
 
-        render();
+  </div>
 
-        setInterval(() => {
-          badge.classList.add('is-swapping');
-          setTimeout(() => {
-            index = (index + 1) % entries.length;
-            render();
-            badge.classList.remove('is-swapping');
-          }, 180);
-        }, 3200);
-      })();
-    </script>
-  </body>
+  <!-- Initialize Lucide Icons & Scroll Animation -->
+  <script>
+    lucide.createIcons();
+
+    // Simple Intersection Observer for scroll reveal
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+
 </html>
